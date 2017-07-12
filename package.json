@@ -1,0 +1,19 @@
+{
+  "name": "ethnodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightswarm124/ethnodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lightswarm124/ethnodejs/issues"
+  },
+  "homepage": "https://github.com/lightswarm124/ethnodejs#readme"
+}
