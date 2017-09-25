@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Audio Player in JS</title>
+        <link rel='stylesheet' type='text/css' href='styles.css'>
+    </head>
+    <body>
+        <div class='audio-player-cont'>
+            <div class='logo'>
+                <img src='images/audio-player.png' />
+            </div>
+            <div class='player'>
+                <div id='songTitle' class='song-title'>My Song title will go here</div>
+                <input id='songSlider' class='song-slider' type='range' min='0' step='1' onchange='seekSong()' />
+                <div>
+                    <div id='currentTime' class='current-time'>00:00</div>
+                    <div id='duration' class='duration'>00:00</div>
+                </div>
+                <div class='controllers'>
+                    <img src='images/previous.png' width='30px' onclick='previous();' />
+                    <img src='images/backward.png' width='30px' onclick='decreasePlaybackRate();' />
+                    <img src='images/pause.png' width='35px' onclick='playOrPauseSong();' />
+                    <img src='images/forward.png' width='30px' onclick='increasePlaybackRate();' />
+                    <img src='images/next.png' width='30px' onclick='next();' />
+                    <img src='images/volume-down.png' width='15px' />
+                    <input id='volumeSlider' class='volume-slider' type='range' min='0' max='1' step='0.01' onchange='adjustVolume()' />
+                    <img src='images/volume-up.png' width='15px' style='margin-left: 2px;' />
+                </div>
+                <div id='nextSongTitle' class='song-title'><b>Next Song :</b>Next song title goes here...</div>
+            </div>
+        </div>
+        <script type='text/javascript' src='player.js'></script>
+    </body>
+</html>
